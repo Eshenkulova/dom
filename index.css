@@ -9,11 +9,15 @@ h1{
     color: rgb(26, 26, 212);
 }
 
-#name{
+input{
     padding: 10px;
     margin: 10px;
     border: 2px solid #333;
     border-radius: 10px;
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button{
@@ -34,4 +38,22 @@ button:hover{
     margin-top: 20px;
     font-weight: bold;
     color: rgb(185, 10, 10);
+}
+
+#result{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+purchase-row{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
