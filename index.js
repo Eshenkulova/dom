@@ -1,6 +1,5 @@
 // DOM - Document Object Model
 
-// Получаем элементы
 const title = document.getElementById('title');
 const nameInput = document.getElementById('name');
 const hello = document.getElementById('hello');
@@ -11,18 +10,16 @@ const destination = document.getElementById('destination');
 const tickets = document.getElementById('tickets');
 
 
-//Обработчик событий при вводе имени
+
 nameInput.addEventListener('input', function(){
     hello.textContent = "Привет, " + nameInput.value + "!";
 });
 
-//При наведении на кнопку событие
 btn.addEventListener("mouseover", function(){
     status.textContent = 'Вы готовы купить билет?';
     status.style.color = 'hwb(80 9% 43%)';
 });
 
-//При двойном нажатии на кнопку 
 btn.addEventListener('dblclick', function(){
     status.textContent = 'Вы купили VIP-билет';
     status.style.color = '#BA55D3';
