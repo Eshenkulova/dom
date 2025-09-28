@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Покупка билетов</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1 id="title">Добро пожаловать</h1>
+
     <input type="text" id="name" placeholder="Укажите ваше имя">
-    <!-- добавить поле выпадающего списка куда хотите полететь -->
-    <!-- добавить поле кол-во билетов -->
+    <input type="text" id="destination" placeholder="Куда хотите полететь?">
+    <input type="number" id="tickets" placeholder="Количество билетов" min="1">
+
     <p id="hello"></p>
 
     <button id="btn">Купить билет</button>
     <h2 id="status">Ничего не куплено</h2>
+
+    <div id="result"></div>
 
     <script src="index.js"></script>
 </body> 
